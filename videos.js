@@ -1,27 +1,16 @@
 /**
  * ============================================================================
- *  @sunjay5968 个人 Vlog 网站配置文件 (零代码维护入口)
+ *  @sunjay5968 个人 Vlog 网站配置文件 (零代码维护 + 支持自动同步)
  * ============================================================================
  *
- *  以后更新网站，只需要修改这一个文件，不需要动任何 HTML 或 CSS！
+ *  启用 GitHub Actions 全自动同步后，新发布的 YouTube 公开视频会自动合并到
+ *  本文件的 `videos` 列表最前面，并重新发布网站。
  *
- *  【如何添加新的 YouTube 视频】
- *  1. 在下面的 `videos: [` 列表中，复制最上面那一组 `{ ... },` 代码块。
- *  2. 粘贴到列表最前面（让新视频排在第一条）。
- *  3. 修改以下几项：
- *     - url:      直接粘贴 YouTube 完整链接（如 https://www.youtube.com/watch?v=... 或 https://youtu.be/...）或 11 位视频 ID
- *     - title:    视频主标题
- *     - subtitle: 英文副标题或一句话补充（不想写可以留空 ""）
- *     - duration: 时长，格式 "分:秒" 或 "时:分:秒"
- *     - date:     发布日期，格式 "YYYY-MM-DD"
- *     - category: 分类编号，可选 "citywalk" | "events" | "lab"（对应下方 categories）
- *     - location: 右侧胶片标签文字，可写拍摄地点或主题
- *     - featured: 把最想放在首页“主监视器”置顶播放的那一条设为 true，其余不写或设为 false
- *
- *  【如何修改个人介绍 / 设备清单 / 其他社媒链接】
- *  - 修改 `channel.tagline`（首屏一句话签名）和 `channel.bio`（关于频道的两段简介）。
+ *  你也可以随时直接在 GitHub 网页点开本文件修改：
+ *  - 修改 `channel.tagline`（首屏一句话签名）和 `channel.bio`（关于频道简介）。
  *  - 想展示拍摄设备：取消 `gear` 里示例行的 `//` 注释并改成你的设备。
  *  - 想加 B站 / 小红书 / 邮箱链接：取消 `links` 里示例行的 `//` 注释并填好网址。
+ *  - 调整某条视频的分类（"citywalk" | "events" | "lab"）或 location 标签。
  * ============================================================================
  */
 
@@ -61,8 +50,49 @@ window.VLOG_SITE = {
     { key: "lab", label: "实验与杂谈", en: "LAB & ESSAY" },
   ],
 
-  // 按发布时间从新到旧排列（已收录 @sunjay5968 目前全部 7 个 Public 公开视频）
+  meta: {
+    lastSynced: "2026-11-24",
+  },
+
+  // 按发布时间从新到旧排列（已收录 @sunjay5968 目前全部 11 个 Public 公开视频）
   videos: [
+    {
+      url: "https://www.youtube.com/watch?v=iUvHGkQVy68",
+      title: "上海靜安寺 · 南京西路",
+      subtitle: "Jing'an Temple, Shanghai · Nanjing West Road",
+      duration: "11:13",
+      date: "2026-11-24",
+      category: "citywalk",
+      location: "SHANGHAI · JING'AN",
+      featured: true,
+    },
+    {
+      url: "https://www.youtube.com/watch?v=u4eZ-a3ik5Q",
+      title: "上海新天地",
+      subtitle: "Shanghai Pacific Xintiandi Commercial Center",
+      duration: "2:21",
+      date: "2026-11-24",
+      category: "citywalk",
+      location: "SHANGHAI · XINTIANDI",
+    },
+    {
+      url: "https://www.youtube.com/watch?v=wKbsLMBil-U",
+      title: "上海市人民廣場 人民公園",
+      subtitle: "People's Square and People's Park in Shanghai Downtown",
+      duration: "9:52",
+      date: "2026-11-24",
+      category: "citywalk",
+      location: "SHANGHAI · PEOPLE'S SQ",
+    },
+    {
+      url: "https://www.youtube.com/watch?v=-PScdQ2l-Vk",
+      title: "上海市青浦區朱家角 盤龍天地",
+      subtitle: "Panlong Tiandi, Zhujiajiao, Qingpu District, Shanghai",
+      duration: "40:23",
+      date: "2026-11-24",
+      category: "citywalk",
+      location: "SHANGHAI · ZHUJIAJIAO",
+    },
     {
       url: "https://www.youtube.com/watch?v=uS_uOR_O6hk",
       title: "上海市外灘 和平飯店和上海之巔",
@@ -71,7 +101,6 @@ window.VLOG_SITE = {
       date: "2026-11-23",
       category: "citywalk",
       location: "SHANGHAI · THE BUND",
-      featured: true,
     },
     {
       url: "https://www.youtube.com/watch?v=acsUsX2PpGc",

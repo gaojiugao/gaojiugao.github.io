@@ -160,7 +160,7 @@
         url: watchUrl,
         title: item.title || "未命名影片",
         subtitle: item.subtitle || "",
-        duration: item.duration || "00:00",
+        duration: item.duration || "--:--",
         seconds: parseDurationSeconds(item.duration || ""),
         date: item.date || "",
         category: item.category || "citywalk",
@@ -241,6 +241,7 @@
     aboutExtraLinks: byId("aboutExtraLinks"),
     dossierYoutubeBtn: byId("dossierYoutubeBtn"),
     footerMeta: byId("footerMeta"),
+    footerSyncNote: byId("footerSyncNote"),
 
     playerModal: byId("playerModal"),
     modalBackdrop: byId("modalBackdrop"),
@@ -313,6 +314,10 @@
     els.dossierYoutubeBtn.href = channelUrl;
     els.footerMeta.textContent =
       "© " + new Date().getFullYear() + " " + (ch.name || "") + " · " + (ch.handle || "");
+    if (els.footerSyncNote && data.meta && data.meta.lastSynced) {
+      els.footerSyncNote.textContent =
+        "AUTO-SYNCED " + data.meta.lastSynced + " · GITHUB PAGES STATIC ARCHIVE";
+    }
 
     if (Array.isArray(ch.gear) && ch.gear.length > 0) {
       els.aboutGearList.innerHTML = ch.gear
