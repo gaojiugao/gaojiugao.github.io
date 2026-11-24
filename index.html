@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-theme="paper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>瘋狂的瑪利亞 — @sunjay5968 | Vlog Archive</title>
+    <meta
+      name="description"
+      content="瘋狂的瑪利亞 (@sunjay5968) 个人 Vlog 影像档案站 — 收录上海城市漫步、街头现场与影像实验作品。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="瘋狂的瑪利亞 — @sunjay5968 | Vlog Archive" />
+    <meta
+      property="og:description"
+      content="用镜头记录城市肌理、街头漫步与自由影像实验。收录 @sunjay5968 YouTube 频道公开视频作品。"
+    />
+    <meta
+      property="og:image"
+      content="https://yt3.googleusercontent.com/z9vqamho6OEm8_MDEz_cs_K6HF150heXS0S3dtFDkAeAJNAUUxWq5DGHQ8VYs55w3ifM2Vy6NV8=s900-c-k-c0x00ffffff-no-rj"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23141413'/%3E%3Crect x='2' y='2' width='28' height='28' rx='2' fill='none' stroke='%232F2E2B' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23D94A1E'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      try {
+        var savedTheme = localStorage.getItem("sunjay5968_theme");
+        if (savedTheme === "darkroom" || savedTheme === "paper") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      } catch (err) {
+        /* ignore storage restrictions in file:// contexts */
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#archive">跳至影片目录</a>
+
+    <!-- Sticky Industrial Top Bar -->
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#screening" aria-label="返回顶部">
+          <span class="rec-dot" aria-hidden="true"></span>
+          <span id="headerBrandName" class="brand-name">瘋狂的瑪利亞</span>
+          <span id="headerBrandHandle" class="brand-handle mono">@sunjay5968</span>
+        </a>
+
+        <nav class="topnav" aria-label="主导航">
+          <a class="topnav-link" href="#screening">
+            <span class="nav-cn">精选放映</span>
+            <span class="nav-en mono">/ REEL</span>
+          </a>
+          <a class="topnav-link" href="#archive">
+            <span class="nav-cn">影片目录</span>
+            <span class="nav-en mono">/ ARCHIVE</span>
+          </a>
+          <a class="topnav-link" href="#about">
+            <span class="nav-cn">频道档案</span>
+            <span class="nav-en mono">/ DOSSIER</span>
+          </a>
+        </nav>
+
+        <div class="topbar-actions">
+          <button
+            id="themeToggle"
+            class="btn-hardware"
+            type="button"
+            aria-label="切换明暗主题"
+            title="切换 PAPER / DARKROOM 主题"
+          >
+            <span class="switch-indicator" aria-hidden="true"></span>
+            <span id="themeToggleLabel" class="mono">PAPER</span>
+          </button>
+          <a
+            id="headerYoutubeLink"
+            class="btn-outline mono"
+            href="https://www.youtube.com/@sunjay5968"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YOUTUBE ↗
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Identity + Reference Monitor Split -->
+      <section id="screening" class="hero section-rule">
+        <div class="container hero-grid">
+          <!-- Left Column: Creator Spec Sheet -->
+          <div class="creator-spec">
+            <div class="spec-eyebrow">
+              <span class="mono">CATALOG // YT-ARCHIVE</span>
+              <span class="spec-badge mono">PUBLIC INDEX</span>
+            </div>
+
+            <div class="creator-identity">
+              <div class="avatar-frame">
+                <img
+                  id="channelAvatar"
+                  src=""
+                  alt="瘋狂的瑪利亞 频道头像"
+                  loading="eager"
+                />
+                <span id="channelAvatarFallback" class="avatar-fallback mono" hidden>
+                  SJ
+                </span>
+              </div>
+              <div class="creator-titles">
+                <h1 id="channelName" class="creator-name">瘋狂的瑪利亞</h1>
+                <p id="channelHandle" class="creator-handle mono">@sunjay5968</p>
+              </div>
+            </div>
+
+            <p id="channelTagline" class="creator-tagline">
+              用镜头记录城市肌理、街头漫步与自由影像实验。
+            </p>
+
+            <!-- 4-Cell Technical Telemetry Grid -->
+            <dl class="telemetry-grid" aria-label="频道数据参数">
+              <div class="telemetry-cell">
+                <dt class="mono">REELS</dt>
+                <dd id="statTotalReels" class="mono">07</dd>
+              </div>
+              <div class="telemetry-cell">
+                <dt class="mono">RUNTIME</dt>
+                <dd id="statTotalRuntime" class="mono">03:33:07</dd>
+              </div>
+              <div class="telemetry-cell">
+                <dt class="mono">SINCE</dt>
+                <dd id="statJoined" class="mono">2016.06</dd>
+              </div>
+              <div class="telemetry-cell">
+                <dt class="mono">BASE</dt>
+                <dd id="statBase" class="mono">SHANGHAI / VLOG</dd>
+              </div>
+            </dl>
+
+            <div class="hero-actions">
+              <a
+                id="heroSubscribeBtn"
+                class="btn-primary"
+                href="https://www.youtube.com/@sunjay5968?sub_confirmation=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>订阅 YOUTUBE 频道</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="btn-secondary" href="#archive">
+                <span>浏览全部影片</span>
+                <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Matte-Black Reference Monitor Deck -->
+          <div class="monitor-column">
+            <article class="monitor-deck" aria-label="参考监视器播放器">
+              <div class="monitor-bezel">
+                <div class="monitor-status-left">
+                  <span class="rec-dot rec-dot--pulse" aria-hidden="true"></span>
+                  <span class="mono bezel-label">NOW SCREENING</span>
+                  <span id="monitorReelCode" class="mono bezel-code">REEL 01 / 07</span>
+                </div>
+                <div class="monitor-status-right mono">
+                  <span id="monitorDuration">19:03</span>
+                  <span class="bezel-sep" aria-hidden="true">·</span>
+                  <span id="monitorDate">2026-11-23</span>
+                  <a
+                    id="monitorYoutubeLink"
+                    class="bezel-ext"
+                    href="https://www.youtube.com/watch?v=uS_uOR_O6hk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    YOUTUBE ↗
+                  </a>
+                </div>
+              </div>
+
+              <div id="monitorStage" class="monitor-stage">
+                <!-- Hydrated dynamically by app.js -->
+              </div>
+
+              <div class="monitor-controls">
+                <div class="monitor-meta">
+                  <h2 id="monitorTitle" class="monitor-title">
+                    上海市外灘 和平飯店和上海之巔
+                  </h2>
+                  <p id="monitorSubtitle" class="monitor-subtitle mono">
+                    The Bund, Peace Hotel and The Top of Shanghai
+                  </p>
+                </div>
+                <div class="monitor-transport" role="group" aria-label="切换监视器片源">
+                  <button
+                    id="monitorPrev"
+                    class="transport-btn mono"
+                    type="button"
+                    aria-label="上一支影片"
+                    title="上一支影片"
+                  >
+                    ◄
+                  </button>
+                  <button
+                    id="monitorNext"
+                    class="transport-btn mono"
+                    type="button"
+                    aria-label="下一支影片"
+                    title="下一支影片"
+                  >
+                    ►
+                  </button>
+                </div>
+              </div>
+
+              <div id="monitorLocalHint" class="local-hint mono" hidden>
+                <span>
+                  [LOCAL FILE MODE] 双击打开本地 HTML 时，YouTube
+                  部分环境会限制站内嵌入播放；上传到 GitHub Pages 后即可直接站内观看。
+                </span>
+                <a
+                  id="monitorLocalHintLink"
+                  href="https://www.youtube.com/watch?v=uS_uOR_O6hk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  前往 YOUTUBE 观看 ↗
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Archive Section -->
+      <section id="archive" class="archive section-rule">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-heading-group">
+              <span class="section-index mono">02 // PUBLIC RELEASES</span>
+              <h2 class="section-title">全部公开作品</h2>
+            </div>
+            <div id="archiveCount" class="archive-count mono">SHOWING 07 / 07</div>
+          </div>
+
+          <div class="control-rail">
+            <div
+              id="filterBar"
+              class="filter-bar"
+              role="tablist"
+              aria-label="按主题筛选视频"
+            >
+              <!-- Hydrated by app.js -->
+            </div>
+
+            <div
+              id="viewToggle"
+              class="view-toggle"
+              role="group"
+              aria-label="切换显示模式"
+            >
+              <button
+                class="view-btn mono is-active"
+                type="button"
+                data-view="grid"
+                aria-pressed="true"
+              >
+                GRID
+              </button>
+              <button
+                class="view-btn mono"
+                type="button"
+                data-view="index"
+                aria-pressed="false"
+              >
+                INDEX
+              </button>
+            </div>
+          </div>
+
+          <div id="videoCatalog" class="video-catalog" aria-live="polite">
+            <!-- Hydrated by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Creator Dossier / About Section -->
+      <section id="about" class="dossier section-rule">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-heading-group">
+              <span class="section-index mono">03 // CREATOR DOSSIER</span>
+              <h2 class="section-title">关于频道</h2>
+            </div>
+          </div>
+
+          <div class="dossier-grid">
+            <div class="dossier-bio-card">
+              <div class="dossier-card-label mono">FIELD NOTES / 简介</div>
+              <p id="aboutBio" class="dossier-bio"></p>
+
+              <div id="aboutGearBlock" class="gear-block" hidden>
+                <div class="dossier-card-label mono">OPTICS &amp; RIG / 拍摄设备</div>
+                <ul id="aboutGearList" class="gear-list mono"></ul>
+              </div>
+            </div>
+
+            <div class="dossier-spec-card">
+              <div class="dossier-card-label mono">CHANNEL REGISTRATION / 频道参数</div>
+              <dl class="dossier-kv">
+                <div class="dossier-kv-row">
+                  <dt class="mono">CHANNEL ID</dt>
+                  <dd id="dossierChannelId" class="mono">UC195XYpr1z9GW7tUJqGCnug</dd>
+                </div>
+                <div class="dossier-kv-row">
+                  <dt class="mono">HANDLE</dt>
+                  <dd id="dossierHandle" class="mono">@sunjay5968</dd>
+                </div>
+                <div class="dossier-kv-row">
+                  <dt class="mono">CANONICAL</dt>
+                  <dd class="mono">
+                    <a
+                      id="dossierUrl"
+                      href="https://www.youtube.com/@sunjay5968"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      youtube.com/@sunjay5968
+                    </a>
+                  </dd>
+                </div>
+                <div class="dossier-kv-row">
+                  <dt class="mono">PUBLIC REELS</dt>
+                  <dd id="dossierPublicCount" class="mono">07 VIDEOS</dd>
+                </div>
+              </dl>
+
+              <div id="aboutExtraLinks" class="extra-links" hidden></div>
+
+              <div class="dossier-actions">
+                <a
+                  id="dossierYoutubeBtn"
+                  class="btn-primary"
+                  href="https://www.youtube.com/@sunjay5968"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>打开 YOUTUBE 主页</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Minimalist Industrial Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span id="footerMeta" class="mono">
+          © 2026 瘋狂的瑪利亞 · @sunjay5968
+        </span>
+        <span class="footer-note mono">
+          GITHUB PAGES READY · ZERO-TRACKING STATIC ARCHIVE
+        </span>
+        <a class="footer-top mono" href="#screening">↑ TOP</a>
+      </div>
+    </footer>
+
+    <!-- Reference Monitor Lightbox Modal -->
+    <div
+      id="playerModal"
+      class="player-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      hidden
+    >
+      <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true"></div>
+
+      <div class="modal-chassis">
+        <div class="monitor-bezel">
+          <div class="monitor-status-left">
+            <span class="rec-dot rec-dot--pulse" aria-hidden="true"></span>
+            <span id="modalReelCode" class="mono bezel-code">REEL 01 / 07</span>
+            <span class="bezel-sep" aria-hidden="true">·</span>
+            <span id="modalDuration" class="mono">19:03</span>
+            <span class="bezel-sep" aria-hidden="true">·</span>
+            <span id="modalDate" class="mono">2026-11-23</span>
+          </div>
+          <div class="modal-top-actions mono">
+            <a
+              id="modalYoutubeLink"
+              class="bezel-ext"
+              href="https://www.youtube.com/watch?v=uS_uOR_O6hk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YOUTUBE ↗
+            </a>
+            <button
+              id="modalClose"
+              class="modal-close-btn mono"
+              type="button"
+              aria-label="关闭播放器"
+            >
+              ESC / 关闭 ×
+            </button>
+          </div>
+        </div>
+
+        <div id="modalStage" class="monitor-stage">
+          <!-- Iframe injected while modal is open -->
+        </div>
+
+        <div class="monitor-controls modal-controls">
+          <div class="monitor-meta">
+            <div class="modal-title-row">
+              <span id="modalLocation" class="modal-loc-tag mono">
+                SHANGHAI · THE BUND
+              </span>
+            </div>
+            <h2 id="modalTitle" class="monitor-title"></h2>
+            <p id="modalSubtitle" class="monitor-subtitle mono"></p>
+          </div>
+          <div class="modal-nav-group" role="group" aria-label="切换视频">
+            <button id="modalPrev" class="modal-nav-btn mono" type="button">
+              ◄ 上一支
+            </button>
+            <button id="modalNext" class="modal-nav-btn mono" type="button">
+              下一支 ►
+            </button>
+          </div>
+        </div>
+
+        <div id="modalLocalHint" class="local-hint mono" hidden>
+          <span>
+            [LOCAL FILE MODE] 本地直接双击打开 HTML 时，部分浏览器或 YouTube
+            策略可能限制嵌入播放；部署到 GitHub Pages 后即可流畅播放。
+          </span>
+          <a
+            id="modalLocalHintLink"
+            href="https://www.youtube.com/watch?v=uS_uOR_O6hk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            在 YOUTUBE 打开 ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./videos.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
