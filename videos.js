@@ -23,8 +23,8 @@ window.VLOG_SITE = {
     "avatar": "https://yt3.googleusercontent.com/z9vqamho6OEm8_MDEz_cs_K6HF150heXS0S3dtFDkAeAJNAUUxWq5DGHQ8VYs55w3ifM2Vy6NV8=s900-c-k-c0x00ffffff-no-rj",
     "joined": "2016.06",
     "base": "SHANGHAI / VLOG",
-    "tagline": "用镜头记录城市肌理、街头漫步与自由影像实验。",
-    "bio": "这里是瘋狂的瑪利亞（@sunjay5968）的个人影像档案室。频道目前主要记录上海的城市漫步——从外滩、武康路、城隍庙与豫园，到海昌海洋公园和城市快闪现场，保留沉浸式的街景声音与步行节奏；同时也会不定期收录赛博朋克短片实验与观点杂谈。（可在 videos.js 中随时修改这段个人简介）",
+    "tagline": "记录城市日常的 Vlog 影像，以及探索想象边界的 AI 电影与短片。",
+    "bio": "这里是瘋狂的瑪利亞（@sunjay5968）的个人影像档案室。频道主要分享两类作品：一类是沉浸式的城市漫步与生活 Vlog，用镜头记录街头肌理、光影节奏与真实环境声；另一类是 AI 电影与创意短片实验，结合生成式影像探索科幻、叙事与视觉表达的新可能。",
     "gear": [],
     "links": []
   },
