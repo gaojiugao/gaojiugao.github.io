@@ -55,14 +55,32 @@ window.VLOG_SITE = {
   },
   "videos": [
     {
+      "url": "https://www.youtube.com/watch?v=WHuEhj1ceTY",
+      "title": "上海青浦和浦東山姆會員店",
+      "subtitle": "Sam's Club stores in Qingpu and Pudong, Shanghai",
+      "duration": "",
+      "date": "2026-11-25",
+      "category": "citywalk",
+      "location": "SHANGHAI · VLOG",
+      "featured": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hUABmIXFU4Q",
+      "title": "上海青浦郊區淀山湖蔡浜村",
+      "subtitle": "Caibang Village, Dianshan Lake, Qingpu Suburbs, Shanghai",
+      "duration": "",
+      "date": "2026-11-25",
+      "category": "citywalk",
+      "location": "SHANGHAI · VLOG"
+    },
+    {
       "url": "https://www.youtube.com/watch?v=1XZupoZatUo",
       "title": "上海浦東世博文化公園雙子山",
       "subtitle": "Twin Hills of Shanghai Pudong Expo Culture Park",
       "duration": "14:44",
       "date": "2026-11-25",
       "category": "events",
-      "location": "SHANGHAI · VLOG",
-      "featured": true
+      "location": "SHANGHAI · VLOG"
     },
     {
       "url": "https://www.youtube.com/watch?v=iUvHGkQVy68",
