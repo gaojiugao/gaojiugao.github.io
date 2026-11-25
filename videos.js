@@ -58,7 +58,7 @@ window.VLOG_SITE = {
       "url": "https://www.youtube.com/watch?v=1XZupoZatUo",
       "title": "上海浦東世博文化公園雙子山",
       "subtitle": "Twin Hills of Shanghai Pudong Expo Culture Park",
-      "duration": "",
+      "duration": "14:44",
       "date": "2026-11-25",
       "category": "events",
       "location": "SHANGHAI · VLOG",
