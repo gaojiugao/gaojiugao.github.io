@@ -46,8 +46,8 @@ window.VLOG_SITE = {
     },
     {
       "key": "lab",
-      "label": "实验与杂谈",
-      "en": "LAB & ESSAY"
+      "label": "AI影片",
+      "en": "AI FILMS"
     }
   ],
   "meta": {
