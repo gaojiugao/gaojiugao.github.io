@@ -51,9 +51,19 @@ window.VLOG_SITE = {
     }
   ],
   "meta": {
-    "lastSynced": "2026-11-25"
+    "lastSynced": "2026-11-26"
   },
   "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=JBhpOvhoEsw",
+      "title": "上海浦東巴黎春天",
+      "subtitle": "Shanghai Pudong Paris Spring",
+      "duration": "",
+      "date": "2026-11-26",
+      "category": "citywalk",
+      "location": "SHANGHAI · VLOG",
+      "featured": true
+    },
     {
       "url": "https://www.youtube.com/watch?v=WHuEhj1ceTY",
       "title": "上海青浦和浦東山姆會員店",
@@ -61,8 +71,7 @@ window.VLOG_SITE = {
       "duration": "",
       "date": "2026-11-25",
       "category": "citywalk",
-      "location": "SHANGHAI · VLOG",
-      "featured": true
+      "location": "SHANGHAI · VLOG"
     },
     {
       "url": "https://www.youtube.com/watch?v=hUABmIXFU4Q",
