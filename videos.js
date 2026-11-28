@@ -51,9 +51,19 @@ window.VLOG_SITE = {
     }
   ],
   "meta": {
-    "lastSynced": "2026-11-26"
+    "lastSynced": "2026-11-28"
   },
   "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=WfrA6acgfeI",
+      "title": "《覺醒者戰爭》第一章：新京都之夜",
+      "subtitle": "War of the Awakened CHAPTER 1:  Night of NEO-KYOTO",
+      "duration": "",
+      "date": "2026-11-28",
+      "category": "citywalk",
+      "location": "YOUTUBE · VLOG",
+      "featured": true
+    },
     {
       "url": "https://www.youtube.com/watch?v=JBhpOvhoEsw",
       "title": "上海浦東巴黎春天",
@@ -61,8 +71,7 @@ window.VLOG_SITE = {
       "duration": "",
       "date": "2026-11-26",
       "category": "citywalk",
-      "location": "SHANGHAI · VLOG",
-      "featured": true
+      "location": "SHANGHAI · VLOG"
     },
     {
       "url": "https://www.youtube.com/watch?v=WHuEhj1ceTY",
